@@ -84,4 +84,4 @@ Visualizar diferencias entre las versiones de un archivo:
 ---
 Esta imagen realizada por Julio Cardenas permite comprender mucho mejor los diferentes estados que puede tener un archivo en git:
 
-<img src="https://github.com/lsofiadb/Curso-Profesional-Git-GitHub/blob/main/Imagenes/EstadosArchivosGitFuenteJulioCardenas.jpg" widht="250px">
+<img src="https://github.com/lsofiadb/Curso-Profesional-Git-GitHub/blob/main/Imagenes/EstadosArchivosGitFuenteJulioCardenas.jpg" width="750px">
