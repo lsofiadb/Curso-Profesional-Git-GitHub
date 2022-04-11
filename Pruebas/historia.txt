@@ -1,3 +1,3 @@
 Hola mi nombre es Laura, tengo 22 años y soy estudiante de Ingeniería de Sistemas.
 Me gusta mucho la programación, mi framework favorito es Spring Boot. 
-En mi tiempo libre suelo leer poesia.
+En mi tiempo libre suelo leer poesia e historias sobre la vida real.
