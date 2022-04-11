@@ -80,6 +80,8 @@ Visualizar diferencias entre las versiones de un archivo:
 
 :ledger: **NOTA:** es necesario tener en cuenta el orden en que se ponen los IDs de los commits ya que para git el primer ID corresponde al commit más antiguo y el segundo ID corresponde a la versión más actual, de tal forma que en color blanco muestra las lineas que no cambiaron, en color rojo aquellas que se cambiaron o eliminaron y en color verde las que se añadieron. Todo esto respecto al ID del commit más antiguo. Claramente se pueden poner los IDs al contrario pero será más dificil comprender que fue lo que cambió respecto a la versión más actual. 
 
-Estado de los archivos en git:
+#### Estados de los archivos en git:
+---
+Esta imagen realizada por Julio Cardenas permite comprender mucho mejor los diferentes estados que puede tener un archivo en git:
 
 ![Estados](.//Imagenes//EstadosArchivosGitFuenteJulioCardenas.jpg)
