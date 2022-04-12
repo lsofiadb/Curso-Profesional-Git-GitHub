@@ -7,55 +7,55 @@ Básicamente permite detectar los cambios realizados en archivos de texto plano,
 Inicializar un repositorio nuevo:
 
 ```
-	git init
+git init
 ```
 
 Realizar seguimiento de los cambios de un archivo, es decir que esta información entra al **stage area**:
 
 ```
-	git add archivo.txt
+git add archivo.txt
 ```
 
 Realizar seguimiento de los cambios de todos los archivos de ese repositorio:
 
 ```
-	git add .
+git add .
 ```
 
 Enviar los últimos cambios del archivo a la base de datos del sistema de control de versiones, para controlar los cambios que se le hayan hecho:
 
 ```
-	git commit -m "mensaje"
+git commit -m "mensaje"
 ```
 
 Permite saber cuales archivos fueron añadidos al **stage area** y cuales no:
 
 ```
-	git status
+git status
 ```
 
 Muestra  todos los cambios realizados, incluyendo las lineas que se han cambiado, cuando y quién hizo estos cambios:
 
 ```
-	git show
+git show
 ```
 
 Para visualizar la historia completa de un archivo:
 
 ```
-	git log archivo.txt
+git log archivo.txt
 ```
 
 Enviar los cambios a un repositorio remoto como GitHub, Bitbucket, etc:
 
 ```
-	git push 
+git push 
 ```
 
 Agrega los cambios del commit más reciente del repositorio remoto al repositorio local:
 
 ```
-	git pull
+git pull
 ```
 
 ### *Comandos básicos terminal de comandos*
@@ -64,32 +64,32 @@ Agrega los cambios del commit más reciente del repositorio remoto al repositori
 Ir a la raiz del disco:
 
 ```
-	cd /
+cd /
 ```
 
 Mostrar todos los archivos, incluso los ocultos en una lista:
 
 ```
-	ls -al
+ls -al
 ```
 
 Mostrar todos los archivos, incluso los ocultos en un grupo solamente:
 
 ```
-	ls -a
+ls -a
 ```
 
 Limpiar la consola:
 
 ```
-	clear
-    CTRL+L
+clear
+CTRL+L
 ```
 
 Ir al disco c desde la raiz del disco:
 
 ```
-	cd /c
+cd /c
 ```
 
 **NOTA:** en Windows no se distingue entre mayúsculas y minúsculas en cuanto al nombre de archivos o carpetas, en cambio para Linux o Mac si es diferente. 
@@ -98,13 +98,13 @@ Ir al disco c desde la raiz del disco:
 Crear directorio/carpeta:
 
 ```
-	mkdir nombre
+mkdir nombre
 ```
 
 Crear archivo:
 
 ```
-	touch archivo.txt
+touch archivo.txt
 ```
 
 *Orientación en carpetas*
@@ -113,49 +113,49 @@ Crear archivo:
 Carpeta actual:
 
 ```
-	cd . 
+cd . 
 ```
 
 Carpeta anterior:
 
 ```
-	cd .. 
+cd .. 
 ```
 ---
 
 Visualizar contenido de un archivo por consola/terminal con el comando cat :cat: 
 
 ```
-	cat archivo.txt
+cat archivo.txt
 ```
 
 
 Visualizar lista de comandos ejecutados en la terminal:
 
 ```
-	history
+history
 ```
 
 Si se quiere ejecutar un comando de esa lista:
 
 ```
-	!<Número del comando en la lista de history>
+!<Número del comando en la lista de history>
 
-    Ejemplo:
-    !15
+Ejemplo:
+!15
 ```
 
 
 Borrar un archivo:
 
 ```
-	rm archivo.txt
+rm archivo.txt
 ```
 
 Información del funcionamiento de un comando:
 
 ```
-	comando --help
+comando --help
 ```
 
 
