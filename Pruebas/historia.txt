@@ -2,3 +2,5 @@ Hola mi nombre es Laura, tengo 22 años y soy estudiante de Ingeniería de Siste
 Me gusta mucho la programación, mi framework favorito es Spring Boot. 
 En mi tiempo libre suelo leer poesia e historias sobre la vida real.
 Me gustan mucho los gatos y los perros, pero las serpientes me dan miedo.
+Tengo varias cicatrices en la rodilla izquierda que me hice jugando 
+cuando estaba en la escuela.
