@@ -114,4 +114,8 @@ Existen dos tipos de reset:
 	git reset IDCommit --hard
 ```
 
-- SOFT :white_check_mark: permite regresar a una versión anterior pero los archivos que se tengan en **staging** permanecen allí, a diferencia de HARD permite conservar el historial de commits posteriores a esa versión que se regresó  
+- SOFT :white_check_mark: permite regresar a una versión anterior pero los archivos que se tengan en **staging** permanecen allí, a diferencia de HARD permite conservar el historial de commits posteriores a esa versión que se regresó:
+
+```
+	git reset IDCommit --soft
+```
