@@ -171,7 +171,7 @@ Este comando permite volver en el tiempo. Pero no como git checkout en donde via
 Como se habia mencionado anteriormente se puede utilizar la versión --hard o --soft, sin embargo existe uno adicional llamado **head** que permite sacar los archivos del staging area pero conservarlos en el directorio de trabajo y en el disco duro:
 
 ```
-	git reset --HEAD
+	git reset head
 ```
 
 La siguiente imagen realizada por Freddy Barreiro permite sintetizar las diferencias entre git rm y git reset:
