@@ -3,13 +3,13 @@
 Para sacar un archivo del **stage area**, es decir antes de hacer el commit:
 
 ```
-	git rm --cached historia.txt
+git rm --cached historia.txt
 ```
 
 Otra opción:
 
 ```
-	git reset historia.txt
+git reset historia.txt
 ```
 
 ## Configuración del usuario en Git Bash
@@ -17,25 +17,25 @@ Otra opción:
 Visualizar todas las configuraciones:
 
 ```
-	git config
+git config
 ```
 
 Visualizar todas las configuraciones por defecto de git en local:
 
 ```
-	git config --list
+git config --list
 ```
 
 Establecer correo electrónico de GitHub:
 
 ```
-	git config --global user.email "lauraduenas1105@gmail.com"
+git config --global user.email "lauraduenas1105@gmail.com"
 ```
 
 Establecer el nombre del usuario:
 
 ```
-	git config --global user.name "Laura Sofia Dueñas Bulla"
+git config --global user.name "Laura Sofia Dueñas Bulla"
 ```
 
 *HACK* :dizzy:
@@ -43,39 +43,39 @@ Establecer el nombre del usuario:
 Abrir un archivo en Visual Studio Code desde git bash:
 
 ```
-	code historia.txt
+code historia.txt
 ```
 
 Visualizar los cambios que se hicieron de un archivo:
 
 ```
-	git show historia.txt
+git show historia.txt
 ```
 
 Añadir el mensaje del commit dentro del editor vim:
 
 ```
-	git commit
+git commit
 ```
 
 Cuando se abre el editor, para poder escribir el mensaje:
 
 ```
-	ESC+i
+ESC+i
 ```
 
 Para guardar el commit y cerrar el editor vim:
 
 ```
-	ESC+shift+zz
+ESC+shift+zz
 ```
 
 Visualizar diferencias entre las versiones de un archivo:
 
 ```
-	git diff IDCommit1 IDCommit2
-    Ejemplo:
-    git diff a9b7a1a15c450651dacd862801261bf790a7a5c0 f5ce290742633929584db1c441fb0e9186d2fb3b
+git diff IDCommit1 IDCommit2
+Ejemplo:
+git diff a9b7a1a15c450651dacd862801261bf790a7a5c0 f5ce290742633929584db1c441fb0e9186d2fb3b
 ```
 
 **NOTA** :arrow_right: es necesario tener en cuenta el orden en que se ponen los IDs de los commits ya que para git el primer ID corresponde al commit más antiguo y el segundo ID corresponde a la versión más actual, de tal forma que en color blanco muestra las lineas que no cambiaron, en color rojo aquellas que se cambiaron o eliminaron y en color verde las que se añadieron. Todo esto respecto al ID del commit más antiguo. Claramente se pueden poner los IDs al contrario pero será más dificil comprender que fue lo que cambió respecto a la versión más actual. 
@@ -112,13 +112,13 @@ Existen dos tipos de reset:
 - HARD :triangular_flag_on_post: :warning: permite regresar a una versión anterior eliminando **TODOS** los cambios que se habian hecho despues de ese commit, incluyendo lo que se tenga en **staging area**, por ello es necesario usarlo de manera cuidadosa ya que **NO** hay forma de recuperar esos cambios. Su sintaxis es así:
 
 ```
-	git reset IDCommit --hard
+git reset IDCommit --hard
 ```
 
 - SOFT :white_check_mark: permite regresar a una versión anterior pero los archivos que se tengan en **staging** permanecen allí, a diferencia de HARD, es decir que pueden ser enviados a un commit, sin embargo el historial de commits tambien desaparece. Su sintaxis es:
 
 ```
-	git reset IDCommit --soft
+git reset IDCommit --soft
 ```
 
 ## Viajar en el tiempo usando checkout :clock3: :arrows_counterclockwise: :clock10:
@@ -129,19 +129,19 @@ Viajar en el tiempo implica poder regresar al pasado o al futuro sin eliminar el
 Para visualizar un archivo en especifico en una versión anterior (esto añade ese archivo al staging area inmediatamente):
 
 ```
-	git checkout IDCommit archivo.txt
+git checkout IDCommit archivo.txt
 ```
 
 Tambien es posible recuperar todo el proyecto completo, no solamente un archivo:
 
 ```
-	git checkout IDCommit 
+git checkout IDCommit 
 ```
 
 Para visualizar la ultima versión (regresar al futuro) de un archivo en una rama en especifico:
 
 ```
-	git checkout master archivo.txt
+git checkout master archivo.txt
 ```
 
 
@@ -156,12 +156,16 @@ Para utilizar git rm es necesario añadir los siguientes flags de acuerdo a su p
 - Si se desea eliminar los archivos del staging area pero conservarlos en el directorio de trabajo y por tanto en el disco duro se utiliza:
 
 	```
-		git rm  --cached 
+	git rm  --cached 
+	```
+
+	```
+	git rm  --cached archivo.txt
 	```
 - Para eliminar los archivos de Git y del disco duro:
 
 	```
-		git rm  --force 
+	git rm  --force archivo.txt
 	```
 
 ### **git reset**
@@ -171,9 +175,11 @@ Este comando permite volver en el tiempo. Pero no como git checkout en donde via
 Como se habia mencionado anteriormente se puede utilizar la versión --hard o --soft, sin embargo existe uno adicional llamado **head** que permite sacar los archivos del staging area pero conservarlos en el directorio de trabajo y en el disco duro:
 
 ```
-	git reset head
+git reset head
 ```
-
+```
+git reset head archivo.txt
+```
 La siguiente imagen realizada por Freddy Barreiro permite sintetizar las diferencias entre git rm y git reset:
 
 <img src="https://github.com/lsofiadb/Curso-Profesional-Git-GitHub/blob/main/Imagenes/GitRmVsGitResetFuenteFreddyBarreiro.jpg" width="750px">
@@ -184,17 +190,17 @@ La siguiente imagen realizada por Freddy Barreiro permite sintetizar las diferen
 Para visualizar las diferencias entre los archivos que se encuentran en **staging area** y los archivos **untracked** es decir que no han sido añadidos a través de **git add .** se utiliza el comando:
 
 ```
-	git diff
+git diff
 ```
 
 Para visualizar los cambios hechos en cada commit, en donde se indica la cantidad de bytes añadidos y eliminados:
 
 ```
-	git log stat
+git log --stat
 ```
 
 **NOTA** :pushpin: si se tienen muchos commits con las flechas :arrow_down: :arrow_up:  se puede continuar visualizandolos, para salir de esta vista basta con escribir:
 
 ```
-	q
+q
 ```
