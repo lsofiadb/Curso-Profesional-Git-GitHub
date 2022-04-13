@@ -77,3 +77,13 @@ git branch -a
 
 La llave pública se usa para cifrar el mensaje, si alguien intercepta el proceso de comunicación y captura el mensaje cifrado, no podrá descifrarlo ya que no tendrá la llave privada para hacerlo, por eso esta debe ser secreta. 
 
+Con el fin de tener mayor seguridad, se crearan estas dos llaves en la máquina local de tal forma que la comunicación con GitHub sea a través del protocolo SSH y no HTTPS.
+
+A la llave privada se le puede añadir una contraseña adicional encima para hacerla aún más segura.
+
+Para generar llaves SSH(Secure Shell) nos dirijimos al home (raiz del disco dentro de un usuario) y mediante git bash:
+
+```
+ssh-keygen -t rsa -b 4096 -C "tu@email.com"
+```
+
