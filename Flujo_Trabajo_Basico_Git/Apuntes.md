@@ -158,5 +158,6 @@ Para fusionar dos ramas, teniendo en cuenta que se hace merge desde la rama a la
 git merge otraRama
 ```
 
-Es necesario tener presente que si se generan conflictos deben repararse y posteriormente hacer un commit. Editores como VSC permiten visualizar estos conflictos y solucionarlos. Sin embargo es recomendable no editar el mismo archivo a la vez. 
+Es necesario tener presente que si se generan conflictos deben repararse y posteriormente hacer un commit, para finalizar el merge. Editores como VSC permiten visualizar estos conflictos y solucionarlos. Sin embargo es recomendable no editar el mismo archivo a la vez, esto suele ocurrir en casos de emergencia. 
 
+NOTA:pushpin::date: desde el 1 de octubre de 2020 GitHub cambió el nombre de la rama principal: ya no es “master” sino main. Este derivado de una profunda reflexión ocasionada por el movimiento #BlackLivesMatter.
