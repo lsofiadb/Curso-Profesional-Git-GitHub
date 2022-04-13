@@ -94,3 +94,47 @@ git log -S “Por contenido”
 ```
 git log > log.txt
 ```
+
+---
+
+Para hacer git add . y git commit -m "mensaje" al tiempo (siempre y cuando los archivos ya se les haya realizado git add . minimo una vez previamente, si se trata de archivos recien creados no funcionará):
+
+```
+git commit -am "mensaje"
+```
+
+## Retomando ramas - brances
+
+Para crear una rama nueva:
+
+```
+git branch nombre
+```
+
+Para cambiar a otra rama:
+
+```
+git checkout otraRama
+```
+
+Para crear una rama y moverse a ella automáticamente, es decir, es la combinación de git brach y git checkout al mismo tiempo:
+
+```
+git checkout -b rama
+```
+
+Nos lleva a cualquier commit no importa la rama, ya que identificamos el id del tag, eliminando el historial de los commit posteriores al tag seleccionado.
+```
+git reset id-commit
+```
+
+Nos lleva a cualquier commit sin borrar los commit posteriores al tag seleccionado.
+```
+git checkout rama-o-id-commit
+```
+
+Este comando permite ver las ramas que se tienen:
+```
+git branch
+```
+
