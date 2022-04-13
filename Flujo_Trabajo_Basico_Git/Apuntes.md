@@ -1,4 +1,4 @@
-## Flujo de trabajo básico en Git
+## Flujo de trabajo básico en Git :rowboat:
 
 ### Comandos para trabajo remoto con git:
 
@@ -12,7 +12,7 @@ Para enviar los últimos commits al repositorio remoto (GitHub, Bitbucket, GitLa
 git push
 ```
 
-Para traer los últimos cambios del servidor remoto al repositorio local
+Para traer los últimos cambios del servidor remoto al repositorio local:
 
 ```
 git fetch
@@ -29,68 +29,80 @@ Permite combinar git fetch y git pull:
 git pull
 ```
 
- Otros comandos que nos para trabajar en proyectos muy grandes:
+ Otros comandos frecuentemente usados al trabajar en proyectos muy grandes :office:
+ ---
 
-Muestra el id commit y el título del commit.
+Muestra el id commit y el título del commit:
  ```
 git log --oneline
 ```
 
- Muestra donde se encuentra el head point en el log.
+ Muestra donde se encuentra el head point en el log:
 ```
 git log --decorate
 ```
 
-Explica el número de líneas que se cambiaron y muestra que se cambió en el contenido.
+Explica el número de líneas que se cambiaron y muestra que se cambió en el contenido:
 ```
 git log -p
 ```
 
-
+Indica que commits ha realizado un usuario, mostrando el usuario y el título de sus commits:
 ```
 git shortlog
 ```
 
+Muestra mensajes personalizados de los commits:
 ```
 git log --graph --oneline --decorate
 ```
+Muestra los commits realizados con su fecha:
+```
+git log --pretty=format:"%cn hizo un commit %h el dia %cd"
+```
 
-```
-git log --pretty=format
-```
+Se limita la cantidad de commits a mostrar, en este caso son 3:
 
 ```
 git log -3
 ```
+
+Muestra los commits a partir de una fecha en especifico:
 
 ```
 git log --after=“2018-1-2”
 ```
 
 ```
-git log --after=“today”
+git log --after=“yesterday”
 ```
+
+Commits hechos por autor que cumplan exactamente con el nombre:
 
 ```
 git log --author=“Name Author”
 ```
-
+Busca los commits que cumplan tal cual está escrito entre las comillas:
 ```
 git log --grep=“INVIE”
 ```
 
+Busca los commits que cumplan sin importar mayúsculas o minúsculas.
 ```
 git log --grep=“INVIE” –i
 ```
 
+Busca los commits en un archivo en específico:
 ```
 git log – index.html
 ```
 
+Buscar los commits con el contenido dentro del archivo:
 ```
 git log -S “Por contenido”
 ```
 
+Guardar los logs en un archivo txt:
 ```
 git log > log.txt
 ```
@@ -103,7 +115,7 @@ Para hacer git add . y git commit -m "mensaje" al tiempo (siempre y cuando los a
 git commit -am "mensaje"
 ```
 
-## Retomando ramas - brances
+## Retomando ramas - branches :herb:
 
 Para crear una rama nueva:
 
@@ -117,7 +129,7 @@ Para cambiar a otra rama:
 git checkout otraRama
 ```
 
-Para crear una rama y moverse a ella automáticamente, es decir, es la combinación de git brach y git checkout al mismo tiempo:
+Para crear una rama y moverse a ella automáticamente, es decir, es la combinación de git branch y git checkout al mismo tiempo:
 
 ```
 git checkout -b rama
@@ -128,13 +140,16 @@ Nos lleva a cualquier commit no importa la rama, ya que identificamos el id del 
 git reset id-commit
 ```
 
-Nos lleva a cualquier commit sin borrar los commit posteriores al tag seleccionado.
+Nos lleva a cualquier commit sin borrar los commit posteriores al tag seleccionado:
+
 ```
 git checkout rama-o-id-commit
 ```
 
 Este comando permite ver las ramas que se tienen:
+
 ```
 git branch
 ```
+
 
