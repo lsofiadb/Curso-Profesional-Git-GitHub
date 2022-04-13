@@ -1,0 +1,15 @@
+#header{
+    background-color: rgb(221, 193, 248);
+    text-align: center;
+    padding: 20px 20px 20px 20px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#content{
+    background-color: aquamarine;
+    text-align: justify;
+    width: 70%;
+    padding: 20px 20px 20px 20px;
+    margin: 0 auto;
+}
