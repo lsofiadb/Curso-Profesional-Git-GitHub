@@ -152,4 +152,11 @@ Este comando permite ver las ramas que se tienen:
 git branch
 ```
 
+Para fusionar dos ramas, teniendo en cuenta que se hace merge desde la rama a la cual se le quieren aplicar los nuevos cambios:
+
+```
+git merge otraRama
+```
+
+Es necesario tener presente que si se generan conflictos deben repararse y posteriormente hacer un commit. Editores como VSC permiten visualizar estos conflictos y solucionarlos. Sin embargo es recomendable no editar el mismo archivo a la vez. 
 
