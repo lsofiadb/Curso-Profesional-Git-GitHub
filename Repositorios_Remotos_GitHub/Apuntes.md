@@ -203,5 +203,27 @@ Sin embargo aunque este comando funcione localmente, al subir nuevamente los tag
 git push origin :refs/tags/nombreTagABorrar
 ```
 
+## Manejo de ramas en GitHub
 
+Comando para mostrar todas las ramas que se tienen con su último commit realizado:
+
+```
+git show-branch --all
+```
+
+Un comando super útil para visualizar mucho mejor el árbol de commits entre ramas:
+
+```
+gitk
+```
+
+Gitk fue el primer visor gráfico que se desarrolló para ver de manera gráfica el historial de un repositorio de Git.
+
+**OJO:** este comando solo viene por defecto si se instala git bash en Windows, de lo contrario no, puede que en otros SO sea necesario instalarlo por aparte.
+
+Es posible enviar la actualización de dos ramas a la vez a través de:
+
+```
+git push origin rama1 rama2
+```
 
