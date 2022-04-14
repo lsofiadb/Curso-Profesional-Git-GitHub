@@ -87,3 +87,45 @@ Para generar llaves SSH(Secure Shell) nos dirijimos al home (raiz del disco dent
 ssh-keygen -t rsa -b 4096 -C "tu@email.com"
 ```
 
+Ahora sugiere añadir una ruta de carpeta distinta pero se puede seleccionar la que se sugiere en la terminal, basta con dar enter.
+
+Allí añadirá dos archivos con el mismo nombre:
+id_rsa, sin embargo el archivo que contiene extensión .pub es el que corresponde a la llave pública, el otro es el de la llave privada.
+
+Para terminar de configurar el sistema, es necesario el encender el servidor SSH de la computadora a través de:
+
+```
+eval $(ssh-agent -s)
+```
+
+La salida debe ser:
+
+```
+agent pid ID
+```
+
+HACK: Shortcut hacia el home:
+
+```
+cd ~
+```
+
+Para añadir llave SSH a este servidor:
+
+```
+ssh-add ruta-donde-guardaste-tu-llave-privada
+```
+
+La salida debe ser un mensaje que indique que la identidad fue añadida con el correo electrónico.
+
+
+## Conexión a GitHub con SSH
+
+Es necesario añadir la clave pública al repositorio remoto de GitHub a través de settings, indicando un nombre a la computadora que tiene esa llave, puesto que si se tienen varios equipos, se crea un par de llaves por cada uno de ellos y se configurarán de igual forma en GitHub añadiendo una llave pública para cada uno de ellos.
+
+Ahora para hacer uso del protocolo SSH, basta con escoger un repositorio local y modificarle el "origin" que se tenia previamente con HTTPS por el URL de SSH que aparece en GitHub:
+
+```
+git remote set-url origin url-ssh-del-repositorio-en-github
+```
+
