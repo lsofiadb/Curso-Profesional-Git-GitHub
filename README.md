@@ -1,6 +1,5 @@
-  # Apuntes de Git y GitHub  <img src=".//Imagenes//logo3.png" width=50px> 
+# Apuntes de Git y GitHub  <img src=".//Imagenes//logo3.png" width=50px> 
 ### Notas y pruebas que realice sobre el curso Profesional de Git y GitHub de Platzi :books: :pushpin:
----
 ### :bookmark: *Secciones:* 
 - :open_file_folder: [Introducción a Git](.//Introduccion_Git//Apuntes.md)
 - :open_file_folder: [Comandos Básicos](.//Comandos_Basicos//Apuntes.md)
