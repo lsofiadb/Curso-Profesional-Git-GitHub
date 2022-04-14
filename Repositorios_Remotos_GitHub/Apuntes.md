@@ -130,3 +130,78 @@ git remote set-url origin url-ssh-del-repositorio-en-github
 ```
 
 Al realizar nuevos cambios, antes de subirlos al repositorio remoto es necesario por buena práctica realizar git pull, con el fin de evitar conflictos, de esta forma estaremos constantemente actualizados de los últimos cambios de los demás desarrolladores.
+
+## Tags y versiones en Git y GitHub
+
+Un comando muy útil que permite observar un gráfico de como han evolucionado las distintas ramas :herb:
+
+```
+git log --all --graph
+```
+
+Sin embargo para visualizar unicamente el título del commit:
+
+```
+git log --all --graph --decorate --oneline
+```
+
+Sin embargo como es un comando MUY largo, es posible asignarle un alias para poder llamarlo de una manera más sencilla, para añadir el alias basta con:
+
+```
+alias arbolito="git log --all --graph --decorate --oneline"
+```
+
+### ¿Qué son los Tags? 
+
+Los Tags permiten marcar un punto especifico de la historia de un proyecto (realeases :round_pushpin:) . De esta forma se puede hacer un seguimiento al progreso del proyecto e identificar los cambios más fácilmente entre cada versión. Incluso es posible hacer un checkout a un tag.
+
+Para crear un Tag:
+
+```
+git tag -a v1.0 -m "Apuntes primera seccion del curso" IDCommit/HashCommit
+```
+
+Para visualizar los tags creados:
+
+```
+git tag
+```
+
+Para saber el ID de ese tag:
+
+```
+git show-ref --tags
+```
+
+Sin embargo ese ID es distinto al ID del commit enlazado. 
+
+Una manera de ver realmente el commit enlazado es:
+
+```
+git show IDTag
+```
+
+Además al usar el comando git log, el historial de commits se mostrará tambien con el Tag asociado al lado de su HASH.
+
+Los tags suelen ser muy útiles en GitHub para que los usuarios puedan dirijirse a los "realeases" de un proyecto directamente.
+
+Aunque no se haga un cambio como tal es necesario subir estos tags a GitHub a través del comando:
+
+```
+git push origin --tags
+```
+
+Para **BORRAR** un tag:
+
+```
+git tag -d nombreTag
+```
+
+Sin embargo aunque este comando funcione localmente, al subir nuevamente los tags al repositorio remoto, el tag seguirá apareciendo, porque se suelen tener como referencia para los realeases, por ello es necesario hacer algo adicional para borrarlo completamente:
+
+```
+git push origin :refs/tags/nombreTagABorrar
+```
+
+
+
