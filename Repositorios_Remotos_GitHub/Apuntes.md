@@ -119,9 +119,9 @@ ssh-add ruta-donde-guardaste-tu-llave-privada
 La salida debe ser un mensaje que indique que la identidad fue añadida con el correo electrónico.
 
 
-## Conexión a GitHub con SSH
+## Conexión a GitHub con SSH :closed_lock_with_key:
 
-Es necesario añadir la clave pública al repositorio remoto de GitHub a través de settings, indicando un nombre a la computadora que tiene esa llave, puesto que si se tienen varios equipos, se crea un par de llaves por cada uno de ellos y se configurarán de igual forma en GitHub añadiendo una llave pública para cada uno de ellos.
+Es necesario añadir la clave pública al repositorio remoto de GitHub a través de settings, indicando un nombre a la computadora que tiene esa llave, puesto que si se tienen varios equipos, se debe crear un par de llaves por cada uno de ellos y se configurarán de igual forma en GitHub añadiendo una llave pública para cada uno de ellos.
 
 Ahora para hacer uso del protocolo SSH, basta con escoger un repositorio local y modificarle el "origin" que se tenia previamente con HTTPS por el URL de SSH que aparece en GitHub:
 
@@ -129,3 +129,4 @@ Ahora para hacer uso del protocolo SSH, basta con escoger un repositorio local y
 git remote set-url origin url-ssh-del-repositorio-en-github
 ```
 
+Al realizar nuevos cambios, antes de subirlos al repositorio remoto es necesario por buena práctica realizar git pull, con el fin de evitar conflictos, de esta forma estaremos constantemente actualizados de los últimos cambios de los demás desarrolladores.
