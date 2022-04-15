@@ -83,7 +83,7 @@ git remote add <nombre_del_remoto> <url_del_remoto>
 ```
 
 ```
-git remote upstream https://github.com/freddier/hyperblog
+git remote add upstream https://github.com/freddier/hyperblog
 ```
 
 **NOTA** :pushpin: por convención se suele nombre a este remoto como **upstream**.
@@ -127,4 +127,18 @@ git pull ramaRemota main
 ```
 
 **NOTA** :pencil: siempre se debe proteger el archivo .git. Dependiendo del software para el servidor web, existen diferentes maneras. La conexión entre GitHub y el servidor se puede realizar mediante: Travis (pago) o Jenkis (Open source). Lo cual permite una integración continua con el servidor, realizando un despliegue automático al enviar los cambios a la rama indicada de producción. 
+
+## Ignorar archivos en el repositorio con .gitignore :ballot_box_with_check: :ballot_box_with_check:
+
+No todos los archivos que se agregan a un proyecto deberían ir a un repositorio, por ejemplo cuando se tiene un archivo donde están contraseñas que comúnmente tienen la extensión .env o cuando hay una conexión a una base de datos; son archivos que nadie debe ver.
+
+Por ello es muy útil crear un archivo llamado .gitignore en la raiz del proyecto, en el interior de este archivo se escribirá la ruta de aquellos archivos que no se quieren subir al repositorio remoto.
+
+Por ejemplo:
+
+```
+*.jpg
+```
+
+Lo anterior indica que no se añadirán a la BD de git y por tanto tampoco al repositorio remoto, TODOS los archivos con extensión .jpg.
 
