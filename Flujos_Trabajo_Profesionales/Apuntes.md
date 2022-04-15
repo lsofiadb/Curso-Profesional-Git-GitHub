@@ -142,3 +142,32 @@ Por ejemplo:
 
 Lo anterior indica que no se añadirán a la BD de git y por tanto tampoco al repositorio remoto, TODOS los archivos con extensión .jpg.
 
+**NOTA:** los archivos binarios no deberian ir en un repositorio. Es posible considerar alternativas como:
+
+```
+https://imgur.com/
+```
+
+La cual permite encontrar imagenes o alojarlas allí, de manera que basta con consultar el URL en el repositorio. Así estamos referenciando archivos binarios en nuestro propio sistema. 
+
+## Readme.md es una excelente práctica
+
+Permita realizar una breve descripción de un repositorio, se encuentra escrito en el lenguaje de marcado llamado: MarkDown.
+
+Algo interesante de Markdown es que funciona en muchas páginas, por ejemplo la edición en Wikipedia; es un lenguaje intermedio que no es HTML, no es texto plano, es una manera de crear excelentes texto formateados.
+
+
+Una página muy útil para editar archivos con extensión .md es:
+```
+https://pandao.github.io/editor.md/en.html
+```
+
+## GitHub Pages :green_heart:
+
+GitHub tiene un servicio de hosting gratis llamado GitHub Pages, tu puedes tener un repositorio donde el contenido del repositorio se vaya a GitHub y se vea online.
+
+Para crear un portafolio se puede crear el repositorio de la siguiente manera:
+
+```
+username.github.io
+```
