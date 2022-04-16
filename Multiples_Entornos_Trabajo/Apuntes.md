@@ -29,3 +29,15 @@ git rebase main
 A continuación se observan las principales diferencias entre el comando Merge y Rebase en git: 
 
 <img src="https://github.com/lsofiadb/Curso-Profesional-Git-GitHub/blob/main/Imagenes/Rebase-vs-Merge-info.jpg" >
+
+
+## Git Stash: guardar cambios en memoria y recuperarlos después :hourglass: :arrows_counterclockwise: :hourglass_flowing_sand:
+
+El stashed nos sirve para guardar cambios para después, Es una lista de estados que nos guarda algunos cambios que hicimos en Staging para poder cambiar de rama sin perder el trabajo que todavía no guardamos en un commit
+
+Ésto es especialmente útil porque hay ocasiones en las que no se permite cambiar de rama, ésto porque porque tenemos cambios sin guardar, no siempre es un cambio lo suficientemente bueno como para hacer un commit, pero no queremos perder ese código en el que estuvimos trabajando.
+
+El stashed nos permite cambiar de ramas, hacer cambios, trabajar en otras cosas y, más adelante, retomar el trabajo con los archivos que teníamos en Staging pero que podemos recuperar ya que los guardamos en el Stash.
+
+
+
