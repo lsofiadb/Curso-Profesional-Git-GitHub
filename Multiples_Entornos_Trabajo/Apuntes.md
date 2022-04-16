@@ -16,7 +16,7 @@ Presenta bastantes problemas:
 
 - Si la rama principal avanzo varios commits puede generar varios conflictos que se tendrán que solucionar de manera manual. 
 
-Para usar rebase primero se realiza en la rama que tiene los cambios y luego en la rama final donde que quieren fusionar esos cambios, es decir donde quedaran finalmente.
+Solo suele utilizarse en repositorios locales y en casos de emergencia, para usar rebase primero se realiza en la rama que tiene los cambios y luego en la rama final donde que quieren fusionar esos cambios, es decir donde quedaran finalmente.
 
 ```
 git rebase experimento
