@@ -1,7 +1,7 @@
 Hola mi nombre es Laura, tengo 22 años y soy estudiante de Ingeniería de Sistemas.
 Me gusta mucho la programación, mi framework favorito es Spring Boot. 
 En mi tiempo libre suelo leer poesia e historias sobre la vida real.
-Hare una prueba 1
+Hare una prueba 1 desde test rebase
 Hare una prueba 2 desde test rebase
 Prueba desde main
 prueba 3
