@@ -117,3 +117,5 @@ Para borrar todos los archivos listados (que no son carpetas) utilizamos:
 ```
 git clean -f
 ```
+
+**NOTA** no es necesario que se trate de una copia de otro archivo, suficiente con que sea un archivo nuevo que se haya creado bastara para que git clean lo detecte.
