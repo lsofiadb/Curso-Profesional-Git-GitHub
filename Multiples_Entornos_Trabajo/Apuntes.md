@@ -71,7 +71,6 @@ git stash pop stash@{<num_stash>}
 ```
 El método pop recuperará y sacará de la lista el último estado del stashed y lo insertará en el staging area, por lo que es importante saber en qué branch te encuentras para poder recuperarlo, ya que el stash será agnóstico a la rama o estado en el que te encuentres, siempre recuperará los cambios que hiciste en el lugar que lo llamas.
 
-Para recuperar los últimos cambios desde el stash a tu staging area utiliza el comando:
 
 ### Eliminar elementos del stash con drop
 Cuando nos equivocamos al crear un stash y no querermos usarlo, es decir revertir los cambios, se usa:
