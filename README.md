@@ -7,3 +7,4 @@
 - :open_file_folder: [Repositorios remotos - GitHub](.//Repositorios_Remotos_GitHub//Apuntes.md)
 - :open_file_folder: [Flujos de trabajo profesionales](.//Flujos_Trabajo_Profesionales//Apuntes.md)
 - :open_file_folder: [Múltiples entornos de trabajo](.//Multiples_Entornos_Trabajo//Apuntes.md)
+- :open_file_folder: [Comandos de Git para casos de emergencia](.//Comandos_Git_Casos_Emergencia//Apuntes.md)
