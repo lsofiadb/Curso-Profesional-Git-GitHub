@@ -119,3 +119,16 @@ git clean -f
 ```
 
 **NOTA** no es necesario que se trate de una copia de otro archivo, suficiente con que sea un archivo nuevo que se haya creado bastara para que git clean lo detecte.
+
+## Git cherry-pick: traer commits viejos al head de un branch :cherries:
+
+Este comando permite traer un commit al HEAD de una rama desde otra, de tal forma que lo copia exactamente igual, sin embargo a diferencia de merge, no permite saber de que rama viene dicho commit, no se puede hacer un rastreo de este proceso, por ello se considera una mala práctica, similar a git rebase, por ello debe usarse con mucha precaución. 
+
+Se utiliza mediante el siguiente comando:
+
+```
+git cherry-pick IDCommit
+```
+
+Es necesario tener en cuenta que este comando se aplica dentro de la rama a la que se le quiere fusionar el commit en su HEAD, es decir que el IDCommit viene de otra rama diferente. 
+
