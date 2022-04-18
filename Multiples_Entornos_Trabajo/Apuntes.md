@@ -102,3 +102,18 @@ Si se quiere crear una rama con los cambios guardados en el último stash:
 git stash branch <nombre_de_la_rama>
 ```
 
+## Git Clean: limpiar tu proyecto de archivos no deseados :put_litter_in_its_place:
+
+A veces creamos archivos cuando estamos realizando nuestro proyecto que realmente no forman parte de nuestro directorio de trabajo, que no se deberían agregar y lo sabemos.
+
+Es importante tener en cuenta que git clean solamente considera borrar archivos redudantes, pero no carpetas, para estas si es necesario borrarlas manualmente, además claramente no tiene en cuenta aquellos archivos que se incluyeron en el .gitignore del proyecto.
+
+Para saber qué archivos vamos a borrar utilizamos:
+```
+git clean --dry-run
+```
+
+Para borrar todos los archivos listados (que no son carpetas) utilizamos:
+```
+git clean -f
+```
