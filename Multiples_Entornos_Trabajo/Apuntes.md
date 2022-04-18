@@ -61,8 +61,20 @@ Para ver la lista (esta se comporta como una estructura de datos tipo LIFO) de c
 git stash list
 ```
 
-### Eliminar elementos del stash
+### Recuperar elementos del git stash list con pop
 Una vez estan guardados los cambios podemos movernos a otra rama y hacer lo que necesitemos, para cuando estemos listos de retomar los cambios que guardamos, regresamos a la rama en que estabamos trabajando y ejecutamos el comando:
+```
+git stash pop
+```
+```
+git stash pop stash@{<num_stash>}
+```
+El método pop recuperará y sacará de la lista el último estado del stashed y lo insertará en el staging area, por lo que es importante saber en qué branch te encuentras para poder recuperarlo, ya que el stash será agnóstico a la rama o estado en el que te encuentres, siempre recuperará los cambios que hiciste en el lugar que lo llamas.
+
+Para recuperar los últimos cambios desde el stash a tu staging area utiliza el comando:
+
+### Eliminar elementos del stash con drop
+Cuando nos equivocamos al crear un stash y no querermos usarlo, es decir revertir los cambios, se usa:
 ```
 git stash drop
 ```
@@ -83,4 +95,11 @@ git stash clear
 - El cambio más reciente (al crear un stash) SIEMPRE recibe el valor 0 y los que estaban antes aumentan su valor.
 - Al crear un stash tomará los archivos que han sido modificados y eliminados. Para que tome un archivo creado es necesario agregarlo al Staging Area con git add [nombre_archivo] con la intención de que git tenga un seguimiento de ese archivo, o también utilizando el comando git stash -u (que guardará en el stash los archivos que no estén en el staging).
 - Al aplicar un stash este no se elimina, es buena práctica eliminarlo.
+
+## Otro comando muy útil para manejar git stash con ramas
+
+Si se quiere crear una rama con los cambios guardados en el último stash:
+```
+git stash branch <nombre_de_la_rama>
+```
 
