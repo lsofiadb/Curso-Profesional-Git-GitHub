@@ -18,7 +18,7 @@ Consideraciones :pencil2:
 
 ¿Qué pasa cuando todo se rompe y no sabemos qué está pasando? Con git reset HashDelHEAD nos devolveremos al estado en que el proyecto funcionaba.
 
-Sin embargo en el log habitual puede que no aparezca el hash del HEAD al que queremos volver, por ello existe un comando que almacena el historial COMPLETO de todo lo que se ha realizado, incluso de los git reset, es decir que mediante el podemos regresar todo a como lo teniamos originalmente funcional, accediendo utilizando el hash del commit al que queremos volver.
+Sin embargo en el log habitual puede que no aparezca el hash del HEAD al que queremos volver, por ello existe un comando que almacena el historial COMPLETO de todo lo que se ha realizado, incluso de los git reset, es decir que mediante el podemos regresar todo a como lo teniamos originalmente funcional, accediendo al hash del commit al que queremos volver. Primero utilizamos:
 
 ```
 git reflog
@@ -28,8 +28,8 @@ Alli podremos visualizar la lista completa de logs con su correspondiente HASH.
 
 Y a partir de esto podemos utilizar:
 
-git reset --soft HashDelHEAD te mantiene lo que tengas en staging ahí.
-git reset --hard HashDelHEAD resetea absolutamente todo incluyendo lo que tengas en staging.
+- git reset --soft HashDelHEAD te mantiene lo que tengas en staging ahí.
+- git reset --hard HashDelHEAD resetea absolutamente todo incluyendo lo que tengas en staging.
 
 Tambien es posible volver a un head especifico a traves de:
 
@@ -40,3 +40,4 @@ Este último comando se considera como un git reset --soft, ya que permite mostr
 
 Los comandos git reset ya se habian visto previamente, sin embargo cabe recordar que es una MALA práctica utilizarlo, debe ser la última opción a considerar. 
 
+**NOTA**: aunque en git log no aperezcan los commits en donde se daño todo, si se utiliza git reflog si se observara el historial completo, esto ya que git no borra nada :bulb:
