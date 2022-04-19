@@ -94,7 +94,7 @@ git log --grep=“INVIE” –i
 
 Busca los commits en un archivo en específico:
 ```
-git log – index.html
+git log index.html
 ```
 
 Buscar los commits con el contenido dentro del archivo:
